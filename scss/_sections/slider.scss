@@ -25,6 +25,9 @@
         height: 200px;
         background: linear-gradient(-180deg, rgba(255, 255, 255, 0), white);
         z-index: 2;
+        @include media-breakpoint-down(sm) {
+            height: 60px;
+        }
     }
 
     .slider-text {
