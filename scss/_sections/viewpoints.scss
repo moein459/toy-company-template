@@ -10,5 +10,8 @@
 
     img {
         width: 64px !important;
+        @include media-breakpoint-down(sm) {
+            display: none !important;
+        }
     }
 }
