@@ -1,0 +1,119 @@
+extends ../layout
+
+block content
+
+    section.slider-container
+
+        // this block it's temporary. we should have different slide with different captions and use native bootstrap Apis for slide captions
+        .slider-text.container
+            h1 حال خوب بازی و سرگرمی
+            p
+                | لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+            a.btn.btn-success(href="#") درخواست سفارش
+        #carousel.carousel.slide.carousel-fade(data-ride='carousel', data-interval="3250" data-pause="false")
+            .carousel-inner
+                .carousel-item.active
+                    img.d-block.w-100(src='./assets/img/toy_01.jpg', alt='baby playing with toy')
+                .carousel-item
+                    img.d-block.w-100(src='./assets/img/toy_02.jpg', alt='baby playing with toy')
+                .carousel-item
+                    img.d-block.w-100(src='./assets/img/toy_03.jpg', alt='baby playing with toy')
+
+
+    .container
+        section.company-intro.section-margin
+            .row
+                .col-lg-4.col-md-12.text-center.mb-3
+                    img(src="https://via.placeholder.com/350x200.png/e74c3c/fff")
+                .col-lg-8.col-md-12
+                    h4 معرفی شرکت
+                    p.text-justify
+                        | لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+
+    section.company-services.section-margin
+        h4.text-center.mb-4 خدمات
+        .bg-light
+            .container
+                .row.p-5
+                    .col-md-4.col-sm-12.mb-3
+                        .text-center
+                            i.mdi.mdi-format-color-highlight.mdi-48px
+                            h4 طراحی
+                            p
+                                | لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                    .col-md-4.col-sm-12.mb-3
+                        .text-center
+                            i.mdi.mdi-format-strikethrough-variant.mdi-48px
+                            h4 قالب سازی
+                            p
+                                | لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                    .col-md-4.col-sm-12.mb-3
+                        .text-center
+                            i.mdi.mdi-export-variant.mdi-48px
+                            h4 تولید
+                            p
+                                | لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+
+    section.company-products.section-margin
+        h4.text-center.mb-5 آخرین محصولات
+        .container
+            .product-owl-carousel.owl-carousel.owl-theme
+                .card
+                    .card-img
+                        img.card-img-top(src='./assets/img/product_01.jpeg' alt='product image')
+                    span مشاهده
+                    .card-body
+                        h5.card-title.text-center ماشین مسابقه
+                        a.stretched-link(href='#')
+
+                .card
+                    .card-img
+                        img.card-img-top(src='./assets/img/product_02.jpg' alt='product image')
+                    span مشاهده
+                    .card-body
+                        h5.card-title.text-center ماشین مسابقه
+                        a.stretched-link(href='#')
+
+                .card
+                    .card-img
+                        img.card-img-top(src='./assets/img/product_03.jpg' alt='product image')
+                    span مشاهده
+                    .card-body
+                        h5.card-title.text-center ماشین مسابقه
+                        a.stretched-link(href='#')
+
+                .card
+                    .card-img
+                        img.card-img-top(src='./assets/img/product_04.jpg' alt='product image')
+                    span مشاهده
+                    .card-body
+                        h5.card-title.text-center ماشین مسابقه
+                        a.stretched-link(href='#')
+
+
+    section.company-viewpoints.section-margin
+        h4.text-center.mb-4 نظر مشتریان
+        .bg-light
+            .container.p-5
+                .viewpoint-owl-carousel.owl-carousel.owl-theme
+                    .media
+                        img.mr-3.rounded-circle(src='./assets/img/profile.jpg' alt='person')
+                        .media-body
+                            h5.text-justify.mt-0.mb-1 معین زارع
+                            p لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                    .media
+                        img.mr-3.rounded-circle(src='./assets/img/profile.jpg' alt='person')
+                        .media-body
+                            h5.text-justify.mt-0.mb-1 معین زارع
+                            p لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                    .media
+                        img.mr-3.rounded-circle(src='./assets/img/profile.jpg' alt='person')
+                        .media-body
+                            h5.text-justify.mt-0.mb-1 معین زارع
+                            p لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+
+    section.company-clients.section-margin
+        h4.text-center.mb-4 برخی از مشتریان ما
+        .container.p-5
+            .clients-owl-carousel.owl-carousel.owl-theme
+                img(src="./assets/img/logo.png" alt="logo")

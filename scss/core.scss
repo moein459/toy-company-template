@@ -1,0 +1,18 @@
+@import "../node_modules/bootstrap-v4-rtl/scss/_functions";
+@import "../node_modules/bootstrap-v4-rtl/scss/variables";
+@import "../node_modules/bootstrap-v4-rtl/scss/media";
+@import "../node_modules/bootstrap-v4-rtl/scss/mixins";
+
+@import "fonts";
+@import "variables";
+@import "body";
+@import "type";
+@import "card";
+@import "navbar";
+
+@import "_sections/slider";
+@import "_sections/intro";
+@import "_sections/services";
+@import "_sections/products";
+@import "_sections/viewpoints";
+@import "_sections/footer";

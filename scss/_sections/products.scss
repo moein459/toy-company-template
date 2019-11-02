@@ -1,0 +1,40 @@
+.company-products {
+
+    .card {
+        position: relative;
+        margin: 10px;
+        transition: .25s ease-in-out;
+
+        img {
+            transition: .25s ease-in-out;
+        }
+
+        span {
+            color: white;
+            font-size: .8em;
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            opacity: 0;
+            background-color: rgba(0, 0, 0, .4);
+            padding: 3px 10px;
+            border-radius: 100px;
+            transition: .25s ease-in-out;
+        }
+
+        &:hover {
+            img {
+                filter: brightness(75%);
+            }
+
+            span {
+                opacity: 1;
+            }
+
+            .card-img::after {
+                opacity: .3;
+            }
+            box-shadow: 0 3px 4px -1px rgba(0,0,0,.2);
+        }
+    }
+}
