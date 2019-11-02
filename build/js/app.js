@@ -24,6 +24,10 @@ animateIn:!1},e.prototype.swap=function(){if(1===this.core.settings.items&&a.sup
 $(document).ready(function () {
     const scrolledDown = 100;
     window.onscroll = function () {
+        navbarCheck();
+    };
+
+    const navbarCheck = function () {
         if (window.scrollY > scrolledDown)
             $('nav.navbar').addClass('scrolled-down');
         else

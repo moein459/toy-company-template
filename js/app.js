@@ -1,6 +1,10 @@
 $(document).ready(function () {
     const scrolledDown = 100;
     window.onscroll = function () {
+        navbarCheck();
+    };
+
+    const navbarCheck = function () {
         if (window.scrollY > scrolledDown)
             $('nav.navbar').addClass('scrolled-down');
         else
